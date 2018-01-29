@@ -1,9 +1,0 @@
-[submodule "fcc-wikiView"]
-	path = fcc-wikiView
-	url = https://github.com/curtdmiller/fcc-wikiView.git
-[submodule "fcc-tictactoe"]
-	path = fcc-tictactoe
-	url = https://github.com/curtdmiller/fcc-tictactoe.git
-[submodule "fcc-randomQuote"]
-	path = fcc-randomQuote
-	url = https://github.com/curtdmiller/fcc-randomQuote.git
