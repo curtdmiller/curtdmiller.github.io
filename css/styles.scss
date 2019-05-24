@@ -10,20 +10,19 @@ body {
 .header-row {
     background-color: $light-blue;
 }
+h1 {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', serif;
+}
 header {
-    background-color: $light-blue;
     margin-top: 30px;
     margin-bottom: 20px;
     img {
         max-width: 100px;
         display: block;
         margin: auto;
-    }
-    h2 {
-        margin: auto;
-        text-align: center;
-        color: #fff;
-        font-family: 'Montserrat', serif;
     }
     a {
         text-decoration: none;
@@ -35,7 +34,7 @@ header {
         text-decoration: none;
         color: $blaze;
     }
-    h5 {
+    .tagline {
         margin: auto;
         text-align: center;
         color: #000;
@@ -114,10 +113,13 @@ header {
 section {
     padding-top: 20px;
     margin-top: 20px;
-    h4 {
+    h3 {
         margin-top: 10px;
-        border-bottom: solid $blaze 2px;
+        border-bottom: solid $blaze 3px;
         font-family: 'Montserrat', serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.5;
     }
     a {
         text-decoration: none;
