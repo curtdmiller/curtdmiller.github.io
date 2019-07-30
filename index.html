@@ -26,11 +26,11 @@
 <body>
     <div class="container-fluid">
         <div class="row header-row">
-            <header class="col-xs-10 col-xs-offset-1">
+            <header class="col-sm-12">
                 <img class="img-circle" src="img-min/casual_headshot-min.jpg" alt="Curt Miller Headshot">
-                <h1><a href="#">curt dallace miller</a></h1>
-                <p class="tagline">creative development for the web</p>
-                <nav>
+                <h1 class="title"><a href="#">curt dallace miller</a></h1>
+                <p class="subtitle">web development</p>
+                <div class="social-nav">
                     <ul>
                         <li>
                             <a href="mailto:curtdmiller@gmail.com">
@@ -48,40 +48,45 @@
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/curtdmiller">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
+                </div>
+                <nav class="row">
+                    <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+                        <ul>
+                            <a href="#sites"><li>websites</li></a> |
+                            <a href="#projects"><li>projects</li></a>
+                            <!-- <a href="#skills"><li>skills</li></a> -->
+                        </ul>
+                    </div>
                 </nav>
             </header>
         </div>
-        <div class="row sticky-nav" data-spy="affix" data-offset-top="275" data-offset-bottom="0">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-                <ul>
-                    <a href="#sites"><li>websites</li></a> |
-                    <a href="#projects"><li>projects</li></a>
-                    <!-- <a href="#skills"><li>skills</li></a> -->
-                </ul>
-            </div>
-        </div>
         <div id="sites"></div>
         <div class="row banner banner-first">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <h2><a href="#sites">#Sites</a></h2>
             </div>
         </div>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
+                <a href="https://jmillerbranding.com/" target="_blank">
+                    <img class="img-responsive img-border" src="img-min/jmillerbranding-crop-600w-min.png" alt="Screenshot of jmillerbranding.com">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
+                <h3><a href="https://jmillerbranding.com/" target="_blank">j. miller branding</a></h3>
+                <p>Jeremey Miller is an expert brand strategist and true collaborator bringing together creative people with fresh ideas. For his own branding project he brought on designer Tanya Deselm for a strikingly beautiful and unconventional design. I created the custom WordPress theme based on underscores including custom svg and text animations and AJAX post loading. I'm also pleased to be featured on the partners page!</p>
+                <p>HTML | Sass | JS | jQuery | AOS | SVG animation | _s | Wordpress | PHP</p>
+            </div>
+        </section>
+        <hr>
+        <section class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="https://www.tauntonlibrary.org/" target="_blank">
                     <img class="img-responsive" src="img-min/tpl-screenshot2-min-min.jpg" alt="Taunton Library web screenshot">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="https://www.tauntonlibrary.org/" target="_blank">taunton public library</a></h3>
                 <p>The Taunton Library site needed a complete redesign to bring it up to modern web standards and allow library patrons to easily find key resources. The new site is responsive, accessible and gives the library staff multiple new ways to curate content through a mix of Wordpress and LibraryAware tools which connect to their digital catalog.</p>
                 <p>HTML/CSS | Javascript | Wordpress 5 / Gutenberg | LibraryAware | PHP | MySQL</p>
@@ -89,12 +94,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
                 <a href="https://candnprojects.com/" target="_blank">
-                    <img class="img-responsive" src="img-min/cnprojects-screenshot-min-min.png" alt="Screenshot of candnprojects.com">
+                    <img class="img-responsive img-border" src="img-min/cnprojects-screenshot-min-min.png" alt="Screenshot of candnprojects.com">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
                 <h3><a href="https://candnprojects.com/" target="_blank">c + n projects</a></h3>
                 <p>A minimalist wordpress portfolio site for artist collaborative C + N Projects (myself and Nichole Speciale) that allows the content of the work to take the full attention of the site visitor. The theme is a custom child theme of Elma Studio's Werkstatt theme.</p>
                 <p>Wordpress | PHP</p>
@@ -102,12 +107,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="http://sewfinelm.com/" target="_blank">
                     <img class="img-responsive" src="img-min/sewfinestudiologo-01-min.png" alt="sew fine studio logo">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="http://sewfinelm.com/" target="_blank">sew fine studio</a></h3>
                 <p>I worked with Sew Fine Studio to update their class registration and payment system to an online system using the Square E-commerce API, dramatically increasing course enrollment and giving them a fresh new web presence.</p>
                 <p>HTML/CSS | Tachyons | Javascript | PHP | MySQL | Square E-commerce API</p>
@@ -115,12 +120,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
                 <a href="http://yellowochrestudio.com/" target="_blank">
                     <img class="img-responsive" src="img-min/YellowOchreStudioLogo-min.png" alt="yellow ochre studio logo">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
                 <h3><a href="http://yellowochrestudio.com/" target="_blank">yellow ochre studio</a></h3>
                 <p>A fresh site for Yellow Ochre Studio showcasing their recent gouache portraits of local produce from farms in Southeastern Massachussetts.</p>
                 <p>HTML | SCSS | jQuery | MailChimp integration</p>
@@ -128,56 +133,30 @@
         </section class="row">
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="http://www.nicholelizspeciale.com" target="_blank">
                     <img class="img-responsive" src="img-min/nlsexample2smaller-min.jpg" alt="nicholelizspeciale.com">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="http://www.nicholelizspeciale.com" target="_blank">nicholelizspeciale.com</a></h3>
                 <p>Artist Nichole Speciale wanted a clean website that would highlight her work while still reflecting its hand-made craft feel. I made a custom carousel that would match other elements and stay out of the way.</p>
                 <p>HTML/CSS | Javascript | Bootstrap</p>
             </div>
         </section>
-        <hr>
-        <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
-                <a href="http://www.dunscombe-miller.com" target="_blank">
-                    <img class="img-responsive" src="img-min/dunscombemiller-min.jpeg" alt="dunscombe-miller.com">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
-                <h3><a href="http://www.dunscombe-miller.com" target="_blank">dunscombe-miller.com</a></h3>
-                <p>A landing page for a bass clarinet duo project of Sam Dunscombe and myself.</p>
-                <p>HTML/CSS</p>
-            </div>
-        </section class="row">
-        <hr>
-        <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
-                <a href="http://www.curtdmiller.com" target="_blank">
-                    <img class="img-responsive" src="img-min/curtdmiller.com-min.jpeg" alt="curtdmiller.com">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <h3><a href="http://www.curtdmiller.com" target="_blank">curtdmiller.com</a></h3>
-                <p>A page for my own music and sound art practice which also demonstrates the use of a number of bootstrap components and an off-canvas navbar setup.</p>
-                <p>HTML/CSS | Javascript | Bootstrap</p>
-            </div>
-        </section>
         <div id="projects"></div>
         <div class="row banner">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <h2><a href="#projects">#Projects</a></h2>
             </div>
         </div>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="https://twitter.com/botobiography" target="_blank">
                     <img class="img-responsive" src="img-min/toddbot-screenshot-min.png" alt="Screenshot of twitter account botobiography">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="https://twitter.com/botobiography" target="_blank">@botobiography</a></h3>
                 <p>This python twitter bot is a collaboration with pianist, poet and performance artist <a href="http://annediego.tumblr.com/">Todd Moellenberg</a>. The bot uses random lines of text from four years of Todd's personal journal entries to generate poetry tweets on the border of familiar and nonsense.</p>
                 <p>Python | Tweepy | Google Drive API | Heroku</p>
@@ -185,12 +164,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
                 <a href="https://curtdmiller.github.io/SpectralScore/" target="_blank">
                     <img class="img-responsive" src="img-min/spectralCrop-min.png" alt="Spectral Score Screenshot">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
                 <h3><a href="https://curtdmiller.github.io/SpectralScore/" target="_blank">spectral score</a></h3>
                 <p>A musical graphing tool to display data from Miller Puckette and Ted Apel's Pure Data spectral pitch detection object [fiddle~] on a score-like graph using D3.js.</p>
                 <p>D3.js | SVG | Pure Data | HTML/CSS | Javascript</p>
@@ -198,12 +177,12 @@
         </section class="row">
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="https://curtdmiller.github.io/fcc-tictactoe/" target="_blank">
                     <img class="img-responsive" src="img-min/tictactoecrop-min.png" alt="Tic Tac Toe">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="https://curtdmiller.github.io/fcc-tictactoe/" target="_blank">tic tac toe</a></h3>
                 <p>A tic tac toe game with an unbeatable computer player using the <a href="https://en.wikipedia.org/wiki/Minimax" target="_blank">minimax</a> algorithm. I implemented this algorithm in object oriented JavaScript.</p>
                 <p>HTML/CSS | Javascript | Font Awesome</p>
@@ -211,12 +190,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
                 <a href="https://curtdmiller.github.io/fcc-calculator/" target="_blank">
                     <img class="img-responsive" src="img-min/calculator-min.png" alt="Calculator">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
                 <h3><a href="https://curtdmiller.github.io/fcc-calculator/" target="_blank">calculator</a></h3>
                 <p>A Javascript calculator using big.js for neat results from floating point math.</p>
                 <p>HTML/CSS | Javascript | big.js</p>
@@ -224,12 +203,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-offset-2">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4">
                 <a href="https://curtdmiller.github.io/fcc-simon/" target="_blank">
                     <img class="img-responsive" src="img-min/fcc-simon-screenshot-min-min.jpg" alt="Screenshot of Simon game">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-2">
                 <h3><a href="https://curtdmiller.github.io/fcc-simon/" target="_blank">simon</a></h3>
                 <p>A JavaScript version of the classic memory game Simon with a spacey twist.</p>
                 <p>HTML/CSS | Javascript</p>
@@ -237,12 +216,12 @@
         </section>
         <hr>
         <section class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-6">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-push-6">
                 <a href="https://curtdmiller.github.io/fcc-randomQuote/" target="_blank">
                     <img class="img-responsive" src="img-min/randomQuote-min.png" alt="Design Quote Machine">
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 col-md-pull-2 text-right">
+            <div class="col-xs-12 col-sm-8 col-sm-push-2 col-md-4 col-md-pull-2 col-md-push-0 text-right">
                 <h3><a href="https://curtdmiller.github.io/fcc-randomQuote/" target="_blank">random design quote</a></h3>
                 <p>A random quotation generator that pulls quotations from the QuotesOnDesign.com API.</p>
                 <p>HTML/CSS | Javascript | Bootstrap | jQuery | AJAX | QuotesOnDesign.com API</p>
@@ -273,9 +252,9 @@
 </div>
 <footer>&copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> curt dallace miller</footer>
 <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!-- bootstrap js -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/scripts.js" charset="utf-8"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<!-- <script src="js/scripts.js" charset="utf-8"></script> -->
 </body>
 </html>

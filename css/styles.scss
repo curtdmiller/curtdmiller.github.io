@@ -1,47 +1,72 @@
 @import "./normalize.scss";
 
 $light-blue: #acd1e9;
-$blaze: #f60;
 $dark-blue: #368ec9;
+$blaze: #f60;
+$blaze-lighter: #ffa162;
+
+$color__header-bg: $light-blue;
+$color__navigation-bg: $dark-blue;
+$color__footer-bg: $dark-blue;
+
+$color__title: #fff;
+$color__title--hover: $blaze;
+$color__section-title: $blaze;
+$color__links: $blaze;
+$color__links--hover: $blaze-lighter;
+$color__text: #222;
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: $color__links;
+}
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: $color__links--hover;
 }
 .header-row {
-    background-color: $light-blue;
+    background-color: $color__header-bg;
 }
 h1 {
-    margin: auto;
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', serif;
 }
 header {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     img {
         max-width: 100px;
         display: block;
         margin: auto;
     }
-    a {
-        text-decoration: none;
-        color: #fff;
-        transition: color .5s;
-        -webkit-transition: color .5s;
+    .title {
+        margin: auto;
+        text-align: center;
+        font-family: 'Montserrat', serif;
+        font-size: 3em;
+        a {
+            text-decoration: none;
+            color: $color__title;
+            transition: color .5s;
+            -webkit-transition: color .5s;
+
+            &:hover, &:active, &:focus {
+                text-decoration: none;
+                color: $color__title--hover;
+            }
+        }
     }
-    a:hover, a:active, a:focus {
-        text-decoration: none;
-        color: $blaze;
-    }
-    .tagline {
+    .subtitle {
         margin: auto;
         text-align: center;
         color: #000;
         margin-bottom: 40px;
     }
-    nav {
+    .social-nav {
         width: 100%;
+        margin-bottom: 20px;
         ul {
             list-style: none;
             width: 100%;
@@ -60,88 +85,67 @@ header {
                 -webkit-transition: color .5s;
             }
             li a i:nth-child(2):hover {
-                color: $light-blue;
+                color: $color__header-bg;
             }
         }
     }
 }
-.sticky-nav {
-    background: $dark-blue;
-    height: 40px;
+nav {
+    background: $color__navigation-bg;
     margin-top: 0;
     margin-bottom: 0;
     color: white;
-    // border-top: solid $dark-blue 2px;
-    // padding-bottom: 5px;
-    // padding-top: 5px;
     ul {
         padding: 0;
         margin: 0;
     }
     li {
         display: inline-block;
-        margin: 6px 0;
-        padding: 4px;
+        margin: 10px;
         letter-spacing: 2px;
+        border-bottom: 3px solid $dark-blue;
     }
     li:hover {
-        background: $light-blue;
-        border-radius: 3px;
+        border-bottom: 3px solid #fff;
     }
     a {
         color: white;
     }
     a:hover {
-        // text-decoration: none;
+        color: white;
     }
     p {
         margin: 0;
         color: white;
     }
 }
-.affix {
-    min-width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-}
-.affix-top {
-}
-.affix-bottom {
-}
 section {
     padding-top: 20px;
     margin-top: 20px;
     h3 {
         margin-top: 10px;
-        border-bottom: solid $blaze 3px;
+        border-bottom: solid $color__section-title 3px;
         font-family: 'Montserrat', serif;
         font-weight: 600;
         font-size: 1.5em;
         line-height: 1.5;
-    }
-    a {
-        text-decoration: none;
-        color: $blaze;
-    }
-    a:hover, a:active, a:focus {
-        text-decoration: none;
-        color: $blaze;
     }
     img {
         opacity: 1;
         transition: opacity .5s;
         -webkit-transition: opacity .5s;
         margin: 0 auto;
+        &.img-border {
+            border: 1px solid #eee;
+            border-radius: 3px;
+        }
     }
 }
 .banner {
     margin-bottom: 20px;
     margin-top: 20px;
-    // background-color: $light-blue;
-    // border-bottom: solid $light-blue 5px;
     border-top: solid $light-blue 5px;
+
     h2 {
         margin-top: 10px;
         padding-bottom: 5px;
@@ -165,7 +169,7 @@ footer {
     text-align: center;
     color: white;
     font-size: .8em;
-    background-color: $dark-blue;
+    background-color: $color__footer-bg;
     padding: 10px 0 10px 0;
 }
 @media only screen and (min-width: 768px) {
