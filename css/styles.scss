@@ -12,6 +12,8 @@ $color__footer-bg: $dark-blue;
 $color__title: #fff;
 $color__title--hover: $blaze;
 $color__section-title: $blaze;
+$color__section-title: #555;
+$color__section-title--hover: #777;
 $color__links: $blaze;
 $color__links--hover: $blaze-lighter;
 $color__text: #222;
@@ -32,6 +34,9 @@ a:hover, a:active, a:focus {
     background-color: $color__header-bg;
 }
 h1 {
+}
+hr {
+  margin: 0;
 }
 header {
     margin-top: 30px;
@@ -120,8 +125,7 @@ nav {
     }
 }
 section {
-    padding-top: 20px;
-    margin-top: 20px;
+    margin: 60px 0;
     h3 {
         margin-top: 10px;
         border-bottom: solid $color__section-title 3px;
@@ -129,6 +133,12 @@ section {
         font-weight: 600;
         font-size: 1.5em;
         line-height: 1.5;
+        a {
+          color: $color__section-title;
+          &:hover {
+            color: $color__section-title--hover;
+          }
+        }
     }
     img {
         opacity: 1;
