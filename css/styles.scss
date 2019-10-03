@@ -67,7 +67,8 @@ header {
       color: $color__title;
       cursor: default;
       span.hover-fill {
-        display: block;
+        // don't display on small screens
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -228,6 +229,15 @@ footer {
     font-size: .8em;
     background-color: $color__footer-bg;
     padding: 10px 0 10px 0;
+}
+@media only screen and (min-width: 448px) {
+  header {
+    .title {
+      span.hover-fill {
+        display: block;
+      }
+    }
+  }
 }
 @media only screen and (min-width: 768px) {
 }
