@@ -12,13 +12,12 @@ $color__navigation-bg: #2fc2fa;
 $color__footer-bg: #2fc2fa;
 
 $color__title: #fff;
-$color__title--hover: $blaze-lighter;
-// $color__section-title: $blaze;
-$color__section-title: #555;
+$color__section-title: #333;
 $color__section-title--hover: #777;
 $color__links: $blaze;
 $color__links--hover: $blaze-lighter;
 $color__text: #222;
+$color__banner: #1b7ba1;
 
 .debug * {
   border: 1px solid red;
@@ -202,14 +201,14 @@ section {
 .banner {
     margin-bottom: 20px;
     margin-top: 20px;
-    border-top: solid $light-blue 5px;
+    border-top: solid $color__header-bg 5px;
 
     h2 {
         margin-top: 10px;
         padding-bottom: 5px;
         a {
             font-family: 'Montserrat', serif;
-            color: $dark-blue;
+            color: $color__banner;
         }
         a:hover {
             text-decoration: none;
