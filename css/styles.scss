@@ -4,23 +4,32 @@ $light-blue: #acd1e9;
 $dark-blue: #368ec9;
 $blaze: #f60;
 $blaze-lighter: #ffa162;
+$blaze-lightest: #ffdac2;
 
-$color__header-bg: $light-blue;
-$color__navigation-bg: $dark-blue;
-$color__footer-bg: $dark-blue;
+// $color__header-bg: $light-blue;
+$color__header-bg: #2fc2fa;
+$color__navigation-bg: #2fc2fa;
+$color__footer-bg: #2fc2fa;
 
 $color__title: #fff;
-$color__title--hover: $blaze;
-$color__section-title: $blaze;
+$color__title--hover: $blaze-lighter;
+// $color__section-title: $blaze;
 $color__section-title: #555;
 $color__section-title--hover: #777;
 $color__links: $blaze;
 $color__links--hover: $blaze-lighter;
 $color__text: #222;
 
+.debug * {
+  border: 1px solid red;
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
+    *::selection {
+      background: $blaze-lightest;
+    }
 }
 a {
     text-decoration: none;
@@ -41,33 +50,55 @@ hr {
 header {
     margin-top: 30px;
     margin-bottom: 0;
+    text-align: center;
     img {
-        max-width: 100px;
-        display: block;
-        margin: auto;
+      max-width: 100px;
+      display: block;
+      margin: auto;
     }
     .title {
-        margin: auto;
-        text-align: center;
-        font-family: 'Montserrat', serif;
-        font-size: 3em;
-        a {
-            text-decoration: none;
-            color: $color__title;
-            transition: color .5s;
-            -webkit-transition: color .5s;
-
-            &:hover, &:active, &:focus {
-                text-decoration: none;
-                color: $color__title--hover;
-            }
+      display: inline-block;
+      position: relative;
+      margin: 20px auto 0;
+      text-align: center;
+      font-family: 'Montserrat', serif;
+      font-size: 3em;
+      font-weight: 600;
+      text-decoration: none;
+      color: $color__title;
+      cursor: default;
+      span.hover-fill {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        color: $blaze-lightest;
+        &:after {
+          content: "curt dallace miller";
+          display: block;
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
         }
+      }
+      &:hover span.hover-fill {
+        width: 100%;
+      }
     }
     .subtitle {
         margin: auto;
         text-align: center;
         color: #000;
         margin-bottom: 40px;
+        font-family: 'Montserrat', serif;
+        font-size: 1.75em;
+        font-weight: 600;
     }
     .social-nav {
         width: 100%;
@@ -103,23 +134,40 @@ nav {
     ul {
         padding: 0;
         margin: 0;
+        font-size: 0;
     }
     li {
         display: inline-block;
+        transition: all 200ms;
+        vertical-align: middle;
+        a {
+          display: inline-block;
+          color: white;
+          margin: 10px;
+          letter-spacing: 2px;
+          border-bottom: 3px solid $color__header-bg;
+          transition: all 200ms;
+          padding-bottom: 2px;
+          font-size: 1.6rem;
+          font-family: 'Montserrat', serif;
+          font-weight: 600;
+        }
+        a:hover {
+          color: white;
+          border-color: #fff;
+        }
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        bottom: 3px;
+        width: 2px;
+        height: 24px;
         margin: 10px;
-        letter-spacing: 2px;
-        border-bottom: 3px solid $dark-blue;
-    }
-    li:hover {
-        border-bottom: 3px solid #fff;
-    }
-    a {
-        color: white;
-    }
-    a:hover {
-        color: white;
-    }
-    p {
+        background-color: white;
+      }
+      p {
         margin: 0;
         color: white;
     }
@@ -127,7 +175,7 @@ nav {
 section {
     margin: 60px 0;
     h3 {
-        margin-top: 10px;
+        margin: 1em 0;
         border-bottom: solid $color__section-title 3px;
         font-family: 'Montserrat', serif;
         font-weight: 600;
@@ -186,4 +234,12 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h3 {
+      margin-top: 0;
+    }
+  }
 }
